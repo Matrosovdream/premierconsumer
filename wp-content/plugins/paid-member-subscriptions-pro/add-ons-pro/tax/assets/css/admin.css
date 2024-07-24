@@ -1,0 +1,10 @@
+/* Styling the Remove tax rate icon */
+#custom-tax-rates a.pms-tax-rate-remove {
+    color: grey;
+}
+#custom-tax-rates a.pms-tax-rate-remove:hover {
+    color: darkgrey;
+}
+#default-billing-country, #merchant-vat-country {
+    width: 300px;
+}

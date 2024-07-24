@@ -1,0 +1,12 @@
+/*
+* Styling Pay What You Want options from Subscription Plan Details metabox
+*
+*/
+div.pms-meta-box-field-wrapper-pwyw{
+    display: none;
+    margin-top:20px;
+}
+
+div.pms-meta-box-field-wrapper-pwyw p.description {
+    margin-bottom: 20px;
+}
