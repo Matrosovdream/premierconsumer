@@ -1000,31 +1000,6 @@ wp_schedule_event( strtotime( '6am' ), 'daily', 'pc_send_monthly_report' );
 // }
 // add_action( 'send_monthly_report', 'call_cron_for_report' );
 
-add_action('init', 'init22');
-function init22() {
-
-	if( $_GET['alert'] ) {
-
-		$name = 'Stan';
-		$alert_name = 'New Account';
-		$user_email = 'matrosovdream@gmail.com';
-		$user_email = 'GlenJuan@gmail.com';
-
-		$sub = 'New Notification - Premier Consumer';
-		$mheaders[] = 'From: Premier Consumer <thankyou@premierconsumer.org>';
-		$mheaders[] = 'Content-Type: text/html; charset=UTF-8';
-		$content = str_replace(
-			array('%name%', '%alert_name%'),
-			array($name, $alert_name),
-			file_get_contents(get_stylesheet_directory().'/templates/alert-notify.php')
-		);
-		wp_mail($user_email, $sub, $content, $mheaders);
-
-		die();
-
-	}
-
-}
 
 // get token for admin
 function get_token_for_admin($user_id){
